@@ -9,6 +9,9 @@ export function Header() {
       <h4>Cookieeeeees!!!!!</h4>
       {user ? (
         <div className='flex gap-2 items-center'>
+          <Link to={'/cart'} title='Cart' className='text-2xl'>
+            🛒
+          </Link>
           <Link type='button' to={'/user'}>
             {user.name}
           </Link>
