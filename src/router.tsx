@@ -1,6 +1,6 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { App } from './App';
-import { Main, Auth, Cart } from './ui';
+import { Main, Auth, Cart, User } from './ui';
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
       },
       {
         path: 'user',
-        element: <>user</>,
+        element: <User />,
       },
       {
         path: 'cart',
