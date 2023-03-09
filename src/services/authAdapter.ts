@@ -8,7 +8,7 @@ export function useAuth(): AuthenticationService {
     auth(name: UserName, email: Email) {
       return new Promise((ok) =>
         setTimeout(() => {
-          const user = createUser(name, email);
+          const user = createUser(name, email, ['marshmallow', 'peanuts'], ['cocoa', 'cherry']);
           ok(user);
         }, 450)
       );
